@@ -47,11 +47,13 @@ const MotorcycleCard = ({ id, name, price, image, category, power, year }: Motor
         </div>
       </CardContent>
       <CardFooter className="flex justify-between">
+
         <Button variant="outline" asChild>
           <Link to={`/motorcycle/${id}`}>
             Подробнее
           </Link>
         </Button>
+
         <Button>
           <Icon name="ShoppingCart" className="mr-2 h-4 w-4" />
           В корзину

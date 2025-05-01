@@ -15,11 +15,13 @@ const App = () => (
       <Toaster />
       <Sonner />
       <BrowserRouter>
-        <Routes>
+
           <Route path="/" element={<Index />} />
+          <Route path="/catalog" element={<Catalog />} />
+          <Route path="/motorcycle/:id" element={<MotorcycleDetail />} />
           {/* Все остальные маршруты будут добавлены позже */}
           <Route path="*" element={<NotFound />} />
-        </Routes>
+
       </BrowserRouter>
     </TooltipProvider>
   </QueryClientProvider>
